@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.addMain,
+.CtMain,
+.shopItems {
+  height: calc(100vh - 108px);
+  width: calc(100% - 210px);
+  flex-grow: 1;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px #4b4b4b;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow-y: scroll;
+}
+
+.addMain button,
+.CtMain button,
+.shopItems button {
+  box-sizing: content-box;
+  padding: 0 10px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  width: 120px;
+  height: 38px;
+  border-radius: 5px;
+  background-color: #F1F1F1;
+}
+
+.addMain button:hover,
+.CtMain button:hover,
+.shopItems button:hover {
+  color: white;
+  background-color: #86BC42;
+}
+
+.addMain .ctWz,
+.CtMain .ctWz,
+.shopItems .ctWz {
+  margin: 33px 20px 31px 20px;
+  font-size: 18px;
+  color: #505050;
+  font-weight: bold;
+}
+
+.addMain .box,
+.CtMain .box,
+.shopItems .box {
+  padding-top: 20px;
+  flex-grow: 1;
+  border-radius: 5px;
+  margin-right: 20px;
+  border-top: 4px solid #86BC42;
+  margin: 0 auto;
+  width: calc(100% - 31px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.addMain .boxLeft {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  border-right: 3px solid #ccc;
+}
+
+.addMain .boxLeft > span {
+  color: #4b4b4b;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.addMain .boxLeft input {
+  width: 100%;
+  height: 38px;
+  outline: none;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  border: 1px solid #666;
+  padding-left: 10px;
+}
+
+.addMain .boxLeft .fenlei {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.addMain .boxLeft .fenlei button {
+  outline: none;
+  border: none;
+  margin-left: 30px;
+  width: 120px;
+  color: white;
+  border-radius: 5px;
+  height: 38px;
+  background-color: #86BC42;
+}
+
+.addMain .boxLeft .cansu {
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #4b4b4b;
+  margin-bottom: 25px;
+}
+
+.addMain .boxLeft .cansu button {
+  outline: none;
+  border: none;
+  width: 120px;
+  color: white;
+  border-radius: 5px;
+  height: 38px;
+  background-color: #86BC42;
+}
+
+.addMain .boxRight {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 50%;
+  height: 100%;
+}
+
+.addMain .boxRight .twoB button {
+  outline: none;
+  border: none;
+  width: 80px;
+  height: 38px;
+  border-radius: 5px;
+  background-color: #F1F1F1;
+}
+
+.addMain .boxRight .twoB button:hover {
+  color: white;
+  background-color: #86BC42;
+}
+
+.addMain .boxRight > :nth-child(2) {
+  margin-top: 25px;
+  border: 2px dashed #666;
+  width: 100%;
+  height: 443px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 443px;
+}
+
+.addMain .boxRight > :nth-child(3),
+.addMain .boxRight > :nth-child(4) {
+  border: 2px dashed #666;
+  width: 180px;
+  height: 160px;
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+  line-height: 160px;
+}
+
+.addMain .boxRight .twoBb {
+  margin-top: 50px;
+  float: right;
+}
+
+.CtMain .box.box1 {
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px 3px #666;
+}
+
+.CtMain .box.box1 table {
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 10px 5px;
+}
+
+.CtMain .box.box1 table tr .dd {
+  text-align: left;
+}
+
+.CtMain .box.box1 table tr td {
+  text-align: right;
+}
+
+.CtMain .box.box1 table tr td input,
+.CtMain .box.box1 table tr td select {
+  width: 260px;
+  padding-left: 5px;
+  height: 38px;
+  border-radius: 5px;
+  border: 1px solid #666;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.CtMain .box.box1 table tr td select {
+  background-color: #F1F1F1;
+}
+
+.CtMain .box.box1 table tr td .ctmbtn2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.CtMain .box.box1 table tr td .ctmbtn2 button {
+  margin-right: 30px;
+  width: 120px;
+}
+
+.CtMain .box.box2 {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 5px 3px #666;
+}
+
+.CtMain .box.box2 .b2Top ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.CtMain .box.box2 .b2Top ul :first-child a {
+  color: orange;
+}
+
+.CtMain .box.box2 .b2Top ul :last-child {
+  border: none;
+}
+
+.CtMain .box.box2 .b2Top ul li {
+  padding: 0 20px;
+  border-right: 1px solid #777;
+}
+
+.CtMain .box.box2 .b2Top ul li a {
+  color: #4b4b4b;
+}
+
+.CtMain .box.box2 .b2Top ul li:hover a {
+  color: orange;
+}
+
+.CtMain .box.box2 .b2Mid {
+  width: 100%;
+}
+
+.CtMain .box.box2 .b2Mid ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #EDF5E3;
+  height: 50px;
+  text-align: center;
+}
+
+.CtMain .box.box2 .b2Mid ul li {
+  font-size: 16px;
+  color: #599b03;
+}
+
+.CtMain .box.box2 .b2Mid .img {
+  text-align: center;
+}
+
+.CtMain .box.box2 .b2Bto {
+  margin-left: 15px;
+  margin-top: 20px;
+  font-style: 16px;
+  color: #444;
+}
+
+.CtMain .box.box2 .b2Bto input,
+.CtMain .box.box2 .b2Bto button {
+  margin-left: 20px;
+}
+
+.CtMain .box.box2 .b2Bto button {
+  width: 140px;
+}
+
+.shopItems .itemsTop {
+  margin: 0 auto;
+  border-bottom: 2px solid #888;
+  width: 97%;
+  padding-bottom: 40px;
+  margin-bottom: 35px;
+}
+
+.shopItems .itemsTop button,
+.shopItems .itemsTop span,
+.shopItems .itemsTop input {
+  margin-left: 10px;
+}
+
+.shopItems .itemsTop input {
+  width: 180px;
+  margin-right: 10px;
+  height: 38px;
+}
+
+.shopItems .itemsTop button {
+  margin-right: 10px;
+  background-color: #86BC42;
+  color: white;
+}
+
+.shopItems .itemsTop button img {
+  height: 60%;
+  vertical-align: text-bottom;
+}
+
+.shopItems .box .itemsBto {
+  width: 100%;
+}
+
+.shopItems .box .itemsBto table thead tr {
+  background-color: #86BC42;
+}
+
+.shopItems .box .itemsBto table thead tr th {
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+  color: #599b03;
+}
+
+.shopItems .box .itemsBto table tbody td {
+  text-align: center;
+  line-height: 60px;
+}
+
+.shopItems .box .itemsBto table tbody td img {
+  width: 56px;
+}
+
+.shopItems .box .itemsBto table tbody td ul {
+  width: 180px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.shopItems .box .itemsBto table tbody td ul li {
+  margin-top: 18px;
+  line-height: 20px;
+  width: 60px;
+  border-right: 1px solid #444;
+}
+
+.shopItems .box .itemsBto table tbody td ul li a {
+  color: #599b03;
+}
+
+.shopItems .box .itemsBto table tbody td ul li:last-child {
+  border: none;
+}
+
+.shopItems .box .itemsBto table tbody td ul li:last-child a {
+  color: red;
+}
+
+.shopItems .itemsPage {
+  margin-top: 20px;
+  float: right;
+  margin-right: 20px;
+}

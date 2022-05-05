@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+// 公共样式
+.addMain,
+.CtMain,
+.shopItems {
+    height: calc(100vh - 108px);
+    width: calc(100% - 210px);
+    flex-grow: 1;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px #4b4b4b;
+    // background-color: pink;
+    margin-left: 20px;
+    margin-right: 20px;
+    // overflow: hidden;
+    overflow-y: scroll;
+
+    // 按钮
+    button {
+        box-sizing: content-box;
+        padding: 0 10px;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        width: 120px;
+        height: 38px;
+        border-radius: 5px;
+        background-color: #F1F1F1;
+
+        &:hover {
+            color: white;
+            background-color: #86BC42;
+        }
+    }
+
+    .ctWz {
+        margin: 33px 20px 31px 20px;
+        font-size: 18px;
+        color: #505050;
+        font-weight: bold;
+    }
+
+    .box {
+        padding-top: 20px;
+        flex-grow: 1;
+        border-radius: 5px;
+        margin-right: 20px;
+        // background-color: pink;
+        // border: 2px solid #000;
+        border-top: 4px solid #86BC42;
+        margin: 0 auto;
+        width: calc(100% - 31px);
+        // height: calc(100% - 95px);
+        // overflow-y: scroll;
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
+
+// 添加产品
+.addMain {
+    .boxLeft {
+        box-sizing: border-box;
+        padding: 20px;
+        width: 50%;
+        // height: 100%;
+        // background-color: greenyellow;
+        display: flex;
+        flex-wrap: wrap;
+        border-right: 3px solid #ccc;
+
+        >span {
+            color: #4b4b4b;
+            font-size: 20px;
+            display: block;
+            margin-bottom: 25px;
+        }
+
+        input {
+            width: 100%;
+            height: 38px;
+            outline: none;
+            margin-bottom: 25px;
+            border-radius: 5px;
+            border: 1px solid #666;
+            padding-left: 10px;
+        }
+
+        .fenlei {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+
+            button {
+                outline: none;
+                border: none;
+                margin-left: 30px;
+                width: 120px;
+                color: white;
+                border-radius: 5px;
+                height: 38px;
+                background-color: #86BC42;
+            }
+        }
+
+        .cansu {
+            width: 100%;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            color: #4b4b4b;
+            margin-bottom: 25px;
+
+            button {
+                outline: none;
+                border: none;
+                // margin-left: 30px;
+                width: 120px;
+                color: white;
+                border-radius: 5px;
+                height: 38px;
+                background-color: #86BC42;
+            }
+        }
+    }
+
+    .boxRight {
+        box-sizing: border-box;
+        padding: 20px;
+        width: 50%;
+        height: 100%;
+        // background-color: salmon;
+
+        .twoB {
+            button {
+                outline: none;
+                border: none;
+                width: 80px;
+                height: 38px;
+                border-radius: 5px;
+                background-color: #F1F1F1;
+
+                &:hover {
+                    color: white;
+                    background-color: #86BC42;
+                }
+            }
+        }
+
+        >:nth-child(2) {
+            margin-top: 25px;
+            border: 2px dashed #666;
+            width: 100%;
+            height: 443px;
+            // background-color: red;
+            text-align: center;
+            font-size: 20px;
+            line-height: 443px;
+        }
+
+        >:nth-child(3),
+        >:nth-child(4) {
+            border: 2px dashed #666;
+            width: 180px;
+            height: 160px;
+            display: inline-block;
+            // background-color: red;
+            text-align: center;
+            font-size: 20px;
+            line-height: 160px;
+        }
+
+
+        .twoBb {
+            margin-top: 50px;
+            float: right;
+        }
+    }
+}
+
+//产品管理
+.CtMain {
+    .box.box1 {
+        margin-bottom: 20px;
+        box-shadow: 0 0 5px 3px #666;
+
+        table {
+            margin: 0 auto;
+            border-collapse: separate;
+            border-spacing: 10px 5px;
+
+            tr {
+                .dd {
+                    text-align: left;
+
+                }
+
+                td {
+                    text-align: right;
+
+                    input,
+                    select {
+                        width: 260px;
+                        padding-left: 5px;
+                        height: 38px;
+                        border-radius: 5px;
+                        border: 1px solid #666;
+                        outline: none;
+                        margin-bottom: 20px;
+                    }
+
+                    select {
+                        background-color: #F1F1F1;
+                    }
+
+                    .ctmbtn2 {
+                        text-align: center;
+                        margin-bottom: 30px;
+
+                        button {
+                            margin-right: 30px;
+                            width: 120px;
+                        }
+
+                        ;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .box.box2 {
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 0 0 5px 3px #666;
+
+        // top
+        .b2Top {
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: start;
+
+                :first-child a {
+                    color: orange;
+                }
+
+                :last-child {
+                    border: none;
+                }
+
+                li {
+
+                    padding: 0 20px;
+                    border-right: 1px solid #777;
+
+                    a {
+                        color: #4b4b4b;
+                    }
+
+                    &:hover a {
+                        color: orange;
+                    }
+                }
+            }
+        }
+
+        // mid
+        .b2Mid {
+            width: 100%;
+
+            ul {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #EDF5E3;
+                height: 50px;
+                text-align: center;
+
+                li {
+                    font-size: 16px;
+                    color: #599b03;
+                }
+            }
+
+            .img {
+                text-align: center;
+            }
+        }
+
+        // b2Bto
+        .b2Bto {
+            margin-left: 15px;
+            margin-top: 20px;
+            font-style: 16px;
+            color: #444;
+
+            input,
+            button {
+                margin-left: 20px;
+            }
+
+            button {
+                width: 140px;
+            }
+        }
+    }
+}
+
+// 产品列表
+.shopItems {
+
+    // 头部
+    .itemsTop {
+        margin: 0 auto;
+        border-bottom: 2px solid #888;
+        width: 97%;
+        // height: 40px;
+        padding-bottom: 40px;
+        margin-bottom: 35px;
+
+        button,
+        span,
+        input {
+            margin-left: 10px;
+        }
+
+        input {
+            width: 180px;
+            margin-right: 10px;
+            height: 38px;
+        }
+
+        button {
+            margin-right: 10px;
+            background-color: #86BC42;
+            color: white;
+
+            img {
+                height: 60%;
+                vertical-align: text-bottom;
+            }
+        }
+
+    }
+
+    // 中部盒子
+    .box {
+        // box-shadow: 0 0 5px 3px #666;
+
+        // 表格
+        .itemsBto {
+            width: 100%;
+
+            table {
+                thead {
+                    tr {
+                        background-color: #86BC42;
+
+                        th {
+                            text-align: center;
+                            font-weight: normal;
+                            font-size: 20px;
+                            color: #599b03;
+                        }
+                    }
+                }
+
+                tbody {
+                    td {
+                        text-align: center;
+                        line-height: 60px;
+
+                        img {
+                            width: 56px;
+                        }
+
+                        ul {
+                            width: 180px;
+                            margin: 0 auto;
+                            display: flex;
+
+                            li {
+                                margin-top: 18px;
+                                line-height: 20px;
+                                width: 60px;
+                                border-right: 1px solid #444;
+
+                                a {
+                                    color: #599b03;
+                                }
+
+                                &:last-child {
+                                    border: none;
+
+                                    a {
+                                        color: red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 底部分页{
+    .itemsPage {
+        margin-top: 20px;
+        float: right;
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../src/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <!-- 布局及部分样式 -->
+    <link rel="stylesheet" href="../css/backend.min.css">
+    <link rel="stylesheet" href="../css/backOthers.min.css">
+    <script src="../../src/jquery/jquery3.6.0min.js"></script>
+    <script src="../../src/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>后台管理系统</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="headerTop">
+            <div class="headerTopLeft">
+                <a target="_blank" href="../../main/index.html"><img src="../../img/logo001.png" alt=""></a>
+                <div class="headerTopLeftBt">后台管理系统</div>
+            </div>
+            <div class="headerTopRight">
+                <img src="../../img/backendimg/images/backend_user.png" alt="">
+                <ul>
+                    <li class="headerTRUser"><a href="#">user3
+                            <img src="../../img/backendimg/images/backend_usersanjiao.png" alt=""></a></li>
+                    <li><a href="#">后台系统</a></li>
+                    <li><a href="#">修改密码</a></li>
+                    <li><a href="#">安全退出</a></li>
+                    <li><a href="#">常见问题解答</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 主体 -->
+    <main>
+        <!-- 侧边栏 -->
+        <aside class="aside">
+            <div class="abox" id="abox">
+                <div class="list">
+                    <div class="image1"></div>
+                    <a href="./backend.html">
+                        <span>首页</span></a>
+                    <!-- 二级菜单 -->
+                    <div class="two">
+                        <div><a href="./backend.html">首页</a></div>
+                        <div><a href="./backend.html">首页</a></div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="image2"></div>
+                    <a href="#"><span>统计</span></a>
+                    <!-- 二级菜单 -->
+                    <div class="two">
+                        <div>统计</div>
+                        <div>统计</div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="image3"></div>
+                    <span>订单管理</span>
+                    <!-- 二级菜单 -->
+                    <div class="two">
+                        <div>订单管理</div>
+                        <div>订单管理</div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="image4"></div>
+                    <span><a href="./backControul.html">产品管理</a></span>
+                    <!-- 二级菜单 -->
+                    <div class="two">
+                        <div><a href="./backAdd.html">添加产品</a></div>
+                        <div><a href="./backShopItems.html">产品列表</a></div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="image5"></div>
+                    <span>物流管理</span>
+                    <!-- 二级菜单 -->
+                    <div class="two">
+                        <div>物流管理</div>
+                        <div>物流管理</div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="image6"></div>
+                    <span>售后管理</span>
+                    <!-- 二级菜单 -->
+                    <div class="two">
+                        <div>售后管理</div>
+                        <div>售后管理</div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="image7"></div>
+                    <span>资金流水</span>
+                    <!-- 二级菜单 -->
+                    <div class="two">
+                        <div>资金流水</div>
+                        <div>资金流水</div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class=" image8"></div>
+                    <span>会员管理</span>
+                    <!-- 二级菜单 -->
+                    <div class="two">
+                        <div>会员管理</div>
+                        <div>会员管理</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- 主体 -->
+        <div class="shopItems ">
+            <div class="ctWz">产品列表</div>
+            <div class="itemsTop">
+                <button><img src="../../img/iconlist.png" alt=""> 批量操作</button>
+                <span>产品名称：</span><input type="text">
+                <span>商品分类：</span><input type="text">
+                <button>查询</button>
+            </div>
+            <div class="box">
+                <!-- 表格 -->
+                <div class="itemsBto ">
+                    <table class="table table-striped  table-hover">
+                        <thead>
+                            <tr class="table-success">
+                                <th scope="col">商品名称</th>
+                                <th scope="col">商品图片</th>
+                                <th scope="col">分类</th>
+                                <th scope="col">单价</th>
+                                <th scope="col">库存</th>
+                                <th scope="col">录入时间</th>
+                                <th scope="col">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>进口芒果</td>
+                                <td><img src="../../img/home_newfruits01.png" alt=""></td>
+                                <td>热卖推荐</td>
+                                <td>￥ 58.99</td>
+                                <td>3464</td>
+                                <td>2020-07-22</td>
+                                <td>
+                                    <ul>
+                                        <li><a href="#">详情</a></li>
+                                        <li><a href="#">修改</a></li>
+                                        <li><a href="#">删除</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>进口芒果</td>
+                                <td><img src="../../img/home_newfruits01.png" alt=""></td>
+                                <td>热卖推荐</td>
+                                <td>￥ 58.99</td>
+                                <td>3464</td>
+                                <td>2020-07-22</td>
+                                <td>
+                                    <ul>
+                                        <li><a href="#">详情</a></li>
+                                        <li><a href="#">修改</a></li>
+                                        <li><a href="#">删除</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>进口芒果</td>
+                                <td><img src="../../img/home_newfruits01.png" alt=""></td>
+                                <td>热卖推荐</td>
+                                <td>￥ 58.99</td>
+                                <td>3464</td>
+                                <td>2020-07-22</td>
+                                <td>
+                                    <ul>
+                                        <li><a href="#">详情</a></li>
+                                        <li><a href="#">修改</a></li>
+                                        <li><a href="#">删除</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>进口芒果</td>
+                                <td><img src="../../img/home_newfruits01.png" alt=""></td>
+                                <td>热卖推荐</td>
+                                <td>￥ 58.99</td>
+                                <td>3464</td>
+                                <td>2020-07-22</td>
+                                <td>
+                                    <ul>
+                                        <li><a href="#">详情</a></li>
+                                        <li><a href="#">修改</a></li>
+                                        <li><a href="#">删除</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>进口芒果</td>
+                                <td><img src="../../img/home_newfruits01.png" alt=""></td>
+                                <td>热卖推荐</td>
+                                <td>￥ 58.99</td>
+                                <td>3464</td>
+                                <td>2020-07-22</td>
+                                <td>
+                                    <ul>
+                                        <li><a href="#">详情</a></li>
+                                        <li><a href="#">修改</a></li>
+                                        <li><a href="#">删除</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>进口芒果</td>
+                                <td><img src="../../img/home_newfruits01.png" alt=""></td>
+                                <td>热卖推荐</td>
+                                <td>￥ 58.99</td>
+                                <td>3464</td>
+                                <td>2020-07-22</td>
+                                <td>
+                                    <ul>
+                                        <li><a href="#">详情</a></li>
+                                        <li><a href="#">修改</a></li>
+                                        <li><a href="#">删除</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>进口芒果</td>
+                                <td><img src="../../img/home_newfruits01.png" alt=""></td>
+                                <td>热卖推荐</td>
+                                <td>￥ 58.99</td>
+                                <td>3464</td>
+                                <td>2020-07-22</td>
+                                <td>
+                                    <ul>
+                                        <li><a href="#">详情</a></li>
+                                        <li><a href="#">修改</a></li>
+                                        <li><a href="#">删除</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 分页 -->
+            <div class="itemsPage">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">......</a></li>
+                        <li class="page-item"><a class="page-link" href="#">10</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+</body>
+<!-- echarts -->
+<script src="../js/backend.js"></script>
+
+</html>

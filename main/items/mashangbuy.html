@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../src/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <!-- 弹出框 -->
+    <link rel="stylesheet" href=".././css/out.min.css">
+    <!-- 布局及部分样式 -->
+    <link rel="stylesheet" href=".././css/index.min.css">
+    <link rel="stylesheet" href="../css/other.min.css">
+    <script src="../../src/jquery/jquery3.6.0min.js"></script>
+    <script src="../../src/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+    <title>生鲜网</title>
+</head>
+
+<body>
+    <!-- 侧边框 -->
+    <aside>
+        <ul>
+            <li> </li>
+            <li> </li>
+            <li>
+                <div>
+                    <a href="../index.html">
+                        <img src="../../img/aside_home.png" alt=""><span>主页</span></a>
+                </div>
+                <div>
+                    <a href="#" id="#usersVip1" data-toggle="modal" data-target="#usersVip">
+                        <img src="../../img/aside_vip.png" alt=""><span>会员</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="../../img/aside_customer.png" alt=""><span>客服</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="../../img/aside_help.png" alt=""> <span>帮助</span>
+                    </a>
+                </div>
+                <div id="cebianShop" data-toggle="modal" data-target="#shoppingCar">
+                    <a href="#">
+                        <img src="../../img/aside_shop.png" alt=""><span>购物车</span>
+                    </a>
+                </div>
+            </li>
+            <li> </li>
+            <li>
+                <div><img src="../../img/aside_ma.png" alt="">
+                </div>
+                <div>
+                    <a href="#top">
+                        <img src="../../img/aside_top.png" alt="">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </aside>
+    <!-- 头部 -->
+    <header>
+        <!-- 头部顶行 -->
+        <div class="headBg">
+            <div class="container HEADTOP">
+                <div class=" headTop d-flex justify-content-between">
+                    <div class="headTopLeft">
+                        <p>欢迎来到fruits-shop!</p>
+                        <!-- 登录/注册 -->
+                        <div class="login">
+                            <button type="button" class="btn btn-light" data-toggle="modal"
+                                data-target="#exampleModal_logoin">
+                                登录
+                            </button>|
+                            <button type="button" class="btn btn-light" data-toggle="modal"
+                                data-target="#exampleModal_zhuce">
+                                注册
+                            </button>
+                        </div>
+                    </div>
+                    <div class="headTopRight">
+                        <span>09:00AM - 22:00PM</span>
+                        <span>123458xx@qq.com</span>
+                        <span><a href="#">联系我们</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 搜索框一栏 -->
+        <div class="headSearch container">
+            <div class="image"></div>
+            <div class="search">
+                <div>
+                    <input type="text" placeholder="请输入关键字">
+                    <button>搜索</button>
+                </div>
+                <div>
+                    <a href="#">热门搜索：</a>
+                    <a href="#">新鲜水果</a>
+                    <a href="#">海鲜水产</a>
+                    <a href="#">肉类</a>
+                    <a href="#">蔬菜</a>
+                    <a href="#">进口水果</a>
+                    <a href="#">速冻食品</a>
+                    <a href="#">面点面食</a>
+                </div>
+            </div>
+            <div class="shopping">
+                <img src="../../img/icon_shop.png" alt="">
+                <span>购物车</span>
+                <span>0</span>
+                <span>物品</span>
+            </div>
+        </div>
+        </div>
+        <!-- 导航栏 -->
+        <div class="headItems">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <a href="./allitems.html">全部商品分类</a>
+                    </div>
+                    <div class="col">
+                        <a href="../index.html">首页</a>
+                    </div>
+                    <div class="col">
+                        <a href="./shoppingcenter.html">选购中心</a>
+                    </div>
+                    <div class="col">
+                        <a href="./weshopping.html">团购专区</a>
+                    </div>
+                    <div class="col">
+                        <a href="./mashangbuy.html">限时秒杀</a>
+                    </div>
+                    <div class="col">
+                        <a href="./helper.html">帮助中心</a>
+                    </div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 主体 -->
+    <main>
+        <div class="allLeft">
+            <div class="allltTop">
+                <ul>
+                    <li>
+                        <div class="title">
+                            <span>新鲜水果</span>
+                            <span>></span>
+                        </div>
+                        <p>进口水果 | 国产水果</p>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <span>海鲜水产</span>
+                            <span>></span>
+                        </div>
+                        <p>鱼类 | 虾类 | 蟹类 | 贝壳 | 三文鱼 | 生蚝</p>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <span>精选肉类</span>
+                            <span>></span>
+                        </div>
+                        <p>猪肉 | 牛肉 | 羊肉 | 鸡翅 | 冷鲜肉 | 牛排</p>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <span>新鲜蔬菜</span>
+                            <span>></span>
+                        </div>
+                        <p>叶菜类 | 根茎类 | 鲜菌类 | 茄果瓜类 | <br> 玉米 | 姜葱蒜椒</p>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <span>速冻食品</span>
+                            <span>></span>
+                        </div>
+                        <p>水饺混沌 | 汤圆元宵 | 面点面食 | <br> 速冻半成品 | 低温乳品 | 奶酪</p>
+                    </li>
+                    <li class="ttlast">
+                        <div class="title ">
+                            <span>粮油杂货</span>
+                            <span>></span>
+                        </div>
+                        <p>米面杂粮 | 食用油 | 调味品 | 南北干货 | <br>方便食品 | 烘培原料</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="allltBto"></div>
+        </div>
+        <div class="allRight">
+            <div class="aRbanner"></div>
+            <div class="aRmianbaoxue">
+                <span>首页 >> 限时秒杀</span>
+            </div>
+            <div class="aRserach">
+                <table>
+                    <td class="aRrr">默认排序</td>
+                    <td class="aRrr">总价↓</td>
+                    <td>￥
+                        <input type="text"> - ￥
+                        <input type="text">
+                        <button>确定</button>
+
+                    </td>
+                    <td><input type="text" class="ipt">
+                        <button>确定</button>
+                    </td>
+                </table>
+            </div>
+            <div class="aRItems">
+                <div class="atimg" id="atimg">
+                    <img src="../../img/miaosha/ms1.png" alt="">
+                    <img src="../../img/miaosha/ms2.png" alt="">
+                    <img src="../../img/miaosha/ms3.png" alt="">
+                    <img src="../../img/miaosha/ms4.png" alt="">
+                    <img src="../../img/miaosha/ms5.png" alt="">
+                    <img src="../../img/miaosha/ms6.png" alt="">
+                    <img src="../../img/miaosha/ms7.png" alt="">
+                    <img src="../../img/miaosha/ms8.png" alt="">
+                    <img src="../../img/miaosha/ms9.png" alt="">
+                </div>
+
+            </div>
+            <div class="aRPage">
+                共 46 条记录 <i style="color: red;">1</i>
+                <span style="margin-right: 3px;;padding: 2px;;border: 1px solid rgb(107, 105, 105);;">2</span>
+                <span style="margin-right: 3px;;padding: 2px;;border: 1px solid rgb(107, 105, 105);;">下一页
+                    > </span>
+                <span style="margin-right: 3px;;padding: 2px;;border: 1px solid rgb(107, 105, 105);;">末页</span>
+            </div>
+        </div>
+    </main>
+    <!-- 脚部 -->
+    <footer>
+        <!-- 表格 -->
+        <div class="footerTop">
+            <table>
+                <thead>
+                    <tr>
+                        <th>购物指南</th>
+                        <th>支付方式</th>
+                        <th>售后服务</th>
+                        <th>帮助中心</th>
+                        <th>客服中心</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>物流流程</td>
+                        <td>在线支付</td>
+                        <td>售后政策</td>
+                        <td>常见问题</td>
+                        <td>客服电话: 400-000-0000</td>
+                    </tr>
+                    <tr>
+                        <td>会员介绍</td>
+                        <td>货到付款</td>
+                        <td>退款说明</td>
+                        <td>新手指南</td>
+                        <td>服务时间: 09:00AM - 22:00PM</td>
+                    </tr>
+                    <tr>
+                        <td>订购流程</td>
+                        <td>分期付款</td>
+                        <td>保修说明</td>
+                        <td>意见咨询</td>
+                        <td>反馈邮箱: 12345678xx@qq.com</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>银行转账</td>
+                        <td>发票制度</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- 脚部跳转 -->
+        <div class="footerBtn">
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="./weshopping.html">团购专区</a></li>
+                <li><a href="./mashangbuy.html">限时秒杀</a></li>
+                <li> <a href="./allitems.html">选购中心</a></li>
+                <li><a href="./helper.html">帮助中心</a></li>
+            </ul>
+            <p>"Copyright © 2009-2011,www.xxxxxx.com,All rights reserved 版权所有 © 百货商城，未经许可严禁复制"</p>
+        </div>
+    </footer>
+    <!-- 弹出框 -->
+
+    <!-- Modal -->
+    <!-- 个人中心  -->
+    <div class="USERVIP">
+        <div class="modal fade" id="usersVip" tabindex="-1" role="dialog" aria-labelledby="usersVipAria"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <ul>
+                            <li id="vipC" style="cursor: pointer;">会员中心</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li><img src="../../img/user/membergicon01.png" alt=""> 我的钱包</li>
+                            <li><img src="../../img/user/membergicon02.png" alt="">账户设置</li>
+                            <li><img src="../../img/user/membergicon03.png" alt="">我的消息</li>
+                            <li><img src="../../img/user/membergicon04.png" alt="">退出</li>
+                        </ul>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="../../img/user/close.png" alt="">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bdLeft" id="userPage">
+                            <ul>
+                                <li>个人首页</li>
+                                <li>我的订单</li>
+                                <li>我的收藏</li>
+                                <li>活动&优惠</li>
+                                <li>优惠码</li>
+                                <li>买家问答</li>
+                                <li>收货地址</li>
+                            </ul>
+                        </div>
+                        <div id="userPageMain" class="bdRight">
+                            <!-- 个人首页 -->
+                            <div>
+                                <div class="up1">
+                                    <div class="userPage">
+                                        <div class="pageMain"> </div>
+                                    </div>
+                                    <div class="userPagedd">
+                                        <p>最近订单（ <i>0</i> ）</p>
+                                        <span>全部 ></span>
+                                    </div>
+                                </div>
+                                <!-- VIP界面 -->
+                                <div class="userVip">
+                                    <div>
+                                        <div class="vtop">
+                                            <span>我的钱包</span>
+                                            <div>
+                                                <ul>
+                                                    <li><span>积分(<i>0</i>)</span></li>
+                                                    <li><span>优惠卷(<i>0</i>)</span></li>
+                                                    <li><span>消费记录(<i>0</i>)</span></li>
+                                                    <li><span class="vtopsp">会员卡(<i>0</i>)</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="vtvp"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 我的订单 -->
+                            <div>
+                                <ul>
+                                    <li>我的订单</li>
+                                    <li></li>
+                                    <li><span>待付款(<i>0</i>)</span></li>
+                                    <li><span>代发货(<i>0</i>)</span></li>
+                                    <li><span>待收货(<i>0</i>)</span></li>
+                                    <li><span class="usersp4">待评价(<i>0</i>)</span></li>
+                                </ul>
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr class="table-active">
+                                            <td scope="col"> </td>
+                                            <td scope="col" colspan="3">商品</td>
+                                            <td scope="col">单价(￥)</td>
+                                            <td scope="col">数量</td>
+                                            <td scope="col">金额(￥)</td>
+                                            <td scope="col" style="text-align: center; ">操作</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class=".table-hover">
+                                        <tr>
+                                            <td scope="col"><img src="../../img/user/shuijiao1.png" alt=""></td>
+                                            <td scope="col" colspan="3">灌汤水饺</td>
+                                            <td scope="col">￥ 20.00</td>
+                                            <td scope="col">X 1</td>
+                                            <td scope="col">￥ 20.00</td>
+                                            <td scope="col" class='btn'>
+                                                <div class="bt1">立即支付</div>
+                                                <div class="bt2">订单详情</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col"><img src="../../img/user/shuijiao1.png" alt=""></td>
+                                            <td scope="col" colspan="3">灌汤水饺</td>
+                                            <td scope="col">￥ 20.00</td>
+                                            <td scope="col">X 1</td>
+                                            <td scope="col">￥ 20.00</td>
+                                            <td scope="col" class='btn'>
+                                                <div class="bt1">立即支付</div>
+                                                <div class="bt2">订单详情</div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <div> </div>
+                            </div>
+                            <!-- 我的收藏 -->
+                            <div></div>
+                            <!-- 活动&优惠 -->
+                            <div></div>
+                            <!-- 优惠码 -->
+                            <div></div>
+                            <!-- 买家问答 -->
+                            <div></div>
+                            <!-- 收货地址 -->
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登录 -->
+    <div class="modal fade" id="exampleModal_logoin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <!-- 头部 -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel_logoin">欢迎登录</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="../../img/user/close.png" alt="">
+                    </button>
+                </div>
+                <!-- 主体 -->
+                <div class="modal-body">
+                    <!-- 登录 -->
+                    <form>
+                        <div class="form-group">
+                            <!-- <label for="exampleInputEmail1">Email address</label> -->
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="电子邮箱">
+                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small> -->
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="exampleInputPassword1_pwd">Password</label> -->
+                            <input type="password" class="form-control" id="exampleInputPassword1_pwd" placeholder="密码">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1_zidong">
+                            <label class="form-check-label" for="exampleCheck1_zidong">下次自动登录</label>
+                        </div>
+                        <div class="loginBtn">
+                            <button type="submit" class="btn btn-light">登录</button>
+                            <button type="submit" class="btn btn-light">用户注册</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 注册 -->
+    <div class="modal fade" id="exampleModal_zhuce" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel_zhuce">注册会员</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="../../img/user/close.png" alt="">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- 注册 -->
+                    <form>
+                        <div class="form-group zhuCe">
+                            <span>*</span>
+                            <input type="email" required class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="电子邮箱">
+                        </div>
+                        <div class="form-group zhuCe">
+                            <span>*</span> <input type="password" required class="form-control zhuCePwd"
+                                placeholder="密码">
+                            <span>*</span> <input type="password" required class="form-control zhuCePwd"
+                                placeholder="确认密码">
+                        </div>
+                        <div class="loginBtn">
+                            <button type="submit" class="btn btn-light zhuCeBtn">注册</button>
+                            <button type="submit" class="btn btn-light zhuCeBtn">会员登陆</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 购物车 -->
+    <div class="SHOPCAR" id="SHOPCAR">
+        <div class="modal fade shoppingCar" id="shoppingCar" tabindex="-1" role="dialog" aria-labelledby="shoppingCar"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-lg  modal-dialog-centered " role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title" id="shoppingCar">
+                            <div class="shopTop">
+                                <span>购物车</span>
+                                <div>
+                                    <span>1.结算商品</span>
+                                    <span>一一</span>
+                                    <span>2.确认订单</span>
+                                    <span>一一</span>
+                                    <span>3.支付完成</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="../../img/user/close.png" alt="">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <thead class="thead-light">
+                                <tr class="table-active">
+                                    <td scope="col"><input type="checkbox" checked name="" id=""></td>
+                                    <td scope="col">全选</td>
+                                    <td scope="col" colspan="3">商品</td>
+                                    <td scope="col">单价(￥)</td>
+                                    <td scope="col">数量</td>
+                                    <td scope="col">金额(￥)</td>
+                                    <td scope="col">操作</td>
+                                </tr>
+                            </thead>
+                            <tbody class=".table-hover">
+                                <tr>
+                                    <td scope="col"><input type="checkbox" checked name="" id=""></td>
+                                    <td scope="col"><img src="../../img/user/shuijiao1.png" alt=""></td>
+                                    <td scope="col" colspan="3">灌汤水饺</td>
+                                    <td scope="col">￥ 20.00</td>
+                                    <td scope="col">
+                                        <nav style="margin-top: 20px;width: 100%;" aria-label="Page navigation example">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true"> - </span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true"> + </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </td>
+                                    <td scope="col">￥ 20.00</td>
+                                    <td scope="col">移除</td>
+                                </tr>
+                                <tr>
+                                    <td scope="col"><input checked type="checkbox" name="" id=""></td>
+                                    <td scope="col"><img src="../../img/user/shuijiao1.png" alt=""></td>
+                                    <td scope="col" colspan="3">灌汤水饺</td>
+                                    <td scope="col">￥ 20.00</td>
+                                    <td scope="col">
+                                        <nav style="margin-top: 20px;width: 100%;" aria-label="Page navigation example">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true"> - </span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true"> + </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </td>
+                                    <td scope="col">￥ 20.00</td>
+                                    <td scope="col">移除</td>
+                                </tr>
+                                <tr>
+                                    <td scope="col"><input checked type="checkbox" name="" id=""></td>
+                                    <td scope="col"><img src="../../img/user/shuijiao1.png" alt=""></td>
+                                    <td scope="col" colspan="3">灌汤水饺</td>
+                                    <td scope="col">￥ 20.00</td>
+                                    <td scope="col">
+                                        <nav style="margin-top: 20px;width: 100%;" aria-label="Page navigation example">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true"> - </span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true"> + </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </td>
+                                    <td scope="col">￥ 20.00</td>
+                                    <td scope="col">移除</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="footerLeft">
+                            <label for="qqqq">
+                                <input checked type="checkbox" name="" id="qqqq">
+                                &nbsp;&nbsp; 全选</label>
+                            <span><a href="#">删除选中的商品</a></span>
+                        </div>
+                        <div class="footerRight">
+                            <!-- 继续购物弹出框 -->
+                            <button class="return">继续购物</button>
+                            <span>总计:</span>
+                            <span>￥ 78.00</span>
+                            <button type="button" class="btn btn-primary" id="JIXUSHOP" data-toggle="modal"
+                                data-target="#jixushopping">结算(3)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 继续购物弹出框 -->
+    <div class="SHOPCAR" id="JIXUSHOP">
+        <div class="modal fade jixushopping" id="jixushopping" tabindex="-1" role="dialog"
+            aria-labelledby="jixushopping" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-lg  modal-dialog-centered " role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title" id="jixushopping">
+                            <div class="shopTop">
+                                <span>确认订单</span>
+                                <div>
+                                    <span>1.结算商品</span>
+                                    <span>一一</span>
+                                    <span>2.确认订单</span>
+                                    <span>一一</span>
+                                    <span>3.支付完成</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="../../img/user/close.png" alt="">
+                        </button>
+                    </div>
+                    <!-- 上部 -->
+                    <div class="modal-body jxspTop">
+                        <!-- 配送方式 -->
+                        <div class="jxTp1">
+                            <span>配送方式</span>
+                            <span>+ 新增收货信息</span>
+                        </div>
+                        <!-- 快递 -->
+                        <div class="jxTpkd">
+                            <div class="left">顺风快递</div>
+                            <div class="right">暂无收获地址,您可以
+                                <a href="#" id="tijiaoDd" data-toggle="modal" data-target="#address"
+                                    style="color: #eb6100;">添加收获地址</a>
+                            </div>
+                        </div>
+                        <span>顺丰快递,国内专业快递公司 <select name="" id="">
+                                <option value="">选择配送时间</option>
+                            </select></span>
+                    </div>
+                    <!-- 下部 -->
+                    <div class="modal-body jxftBto">
+                        <!-- 下左 -->
+                        <div class="jxftBtLeft">
+                            <span>选择支付方式</span>
+                            <div class="ft1">
+                                <span>货到付款</span>
+                                <span>请到网站编辑-电子商务-电子商务设置-支付设置修改</span>
+                            </div>
+                            <!-- 下作三 -->
+                            <div class="ftx3">
+                                <!-- 下左1 -->
+                                <div class="ftx31">
+                                    <span>可用积分 <i>0</i> (分=￥)</span>
+                                    <div class="ipt">
+                                        <input type="text" placeholder="输入积分">
+                                        <span>确定</span>
+                                    </div>
+                                    <div>已使用 <i>0</i> 分,可抵扣<i>￥0.00</i></div>
+                                    <div><input type="checkbox">账户余额 <i>￥0.00</i></div>
+                                    <div class="ipt">
+                                        <input type="text" placeholder="输入金额">
+                                        <span>确定</span>
+                                    </div>
+                                    <div>已使用 <i>￥0</i>
+                                    </div>
+                                    <div class="ftx32"></div>
+                                    <div class="ftx33"></div>
+                                </div>
+                                <!-- 下左2 -->
+                                <div class="ftx32">
+                                    <span>优惠券<i>0</i>张</span>
+                                    <span>暂无可用优惠券</span>
+                                </div>
+                                <!-- 下左3 -->
+                                <div class="ftx33">
+                                    <span>给商家留言</span>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 下右 -->
+                        <div class="jxftBtRight">
+                            <div class="r1"><span>发票</span><img src="../../img/user/goucha.png" alt=""></div>
+                            <div class="r2">
+                                <img src="../../img/user/shuijiao1.png" alt="">
+                                <div class="r22">
+                                    <div>
+                                        <span>灌汤水饺</span><i>￥ 20.00</i>
+                                    </div>
+                                    <span> X 1</span>
+                                </div>
+                            </div>
+                            <div class="r2">
+                                <img src="../../img/user/shuijiao1.png" alt="">
+                                <div class="r22">
+                                    <div>
+                                        <span>灌汤水饺</span><i>￥ 20.00</i>
+                                    </div>
+                                    <span> X 1</span>
+                                </div>
+                            </div>
+                            <div class="r3">
+                                <span>商品 <i>2</i> 件 总计: ￥78.00 </span>
+                                <span>使用优惠/积分/费用</span>
+                                <span>积分<i> -￥0.00 </i></span>
+                                <span>余额<i> -￥0.00 </i></span>
+                                <span>优惠券<i> -￥0.00</i></span>
+                                <span>支付手续费<i>￥0.00</i></span>
+                                <span>运费<i>￥0.00</i></span>
+                                <span>实付: <i>￥53.00</i></span>
+                            </div>
+                            <div class="r4">
+                                <button class="return">返回购物车</button>
+                                <button>提交订单</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 地址 -->
+    <div id="ADDRESS">
+        <div class="modal fade" id="address" tabindex="-1" role="dialog" aria-labelledby="addresssss"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <!-- 头部 -->
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <span>收货地址</span>
+                            <img class="return" src="../../img/user/close.png" alt="">
+                        </div>
+                        <button type="button" style=" display: none;" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <img src="../../img/user/close.png" alt="">
+                        </button>
+                    </div>
+                    <!-- 主体 -->
+                    <div class="modal-body">
+                        <div class="adrsTb">
+                            <table>
+                                <tr>
+                                    <td><span style="color: red;">*</span>收货地址:</td>
+                                    <td>
+                                        <select name="" id="">
+                                            <option value=""> 省份</option>
+                                        </select><select name="" id="">
+                                            <option value="">城市 </option>
+                                        </select><select name="" id="">
+                                            <option value="">区(县) </option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><textarea name="" id="" cols="40" rows="4" placeholder="请输入详细地址信息,如道路、i门牌号、小区、楼栋号、单元等信息
+                                        "></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td><span style="color: red;">*</span>收货人:</td>
+                                    <td><input type="text" placeholder="收货人"></td>
+                                </tr>
+                                <tr>
+                                    <td><span style="color: red;">*</span>联系方式:</td>
+                                    <td><input type="text" placeholder="手机/电话"></td>
+                                </tr>
+                                <tr>
+                                    <td><span style="color: red;">*</span>邮编:</td>
+                                    <td><input type="text" placeholder="邮编"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="adrsBt">
+                            <button>确定</button>
+                            <button>取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../../main/js/backend.js"></script>
+<script src="../../main/js/index.js"></script>
+
+
+</html>

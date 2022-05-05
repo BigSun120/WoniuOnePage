@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../src/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <!-- 布局及部分样式 -->
+    <link rel="stylesheet" href="../css/backend.min.css">
+    <link rel="stylesheet" href="../css/backOthers.min.css">
+    <script src="../../src/jquery/jquery3.6.0min.js"></script>
+    <script src="../../src/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>后台管理系统</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="headerTop">
+            <div class="headerTopLeft">
+                <a target="_blank" href="../../main/index.html"><img src="../../img/logo001.png" alt=""></a>
+                <div class="headerTopLeftBt">后台管理系统</div>
+            </div>
+            <div class="headerTopRight">
+                <img src="../../img/backendimg/images/backend_user.png" alt="">
+                <ul>
+                    <li class="headerTRUser"><a href="#">user3
+                            <img src="../../img/backendimg/images/backend_usersanjiao.png" alt=""></a></li>
+                    <li><a href="#">后台系统</a></li>
+                    <li><a href="#">修改密码</a></li>
+                    <li><a href="#">安全退出</a></li>
+                    <li><a href="#">常见问题解答</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 主体 -->
+    <main>
+        <!-- 侧边栏 -->
+        <aside class="aside">
+            <div class="abox" id="abox">
+                <div class="list">
+                    <div class="image1"></div>
+                    <a href="./backend.html">
+                        <span>首页</span></a>
+                    <!-- 二级菜单 -->
+                    <div class="two">
+                        <div><a href="./backend.html">首页</a></div>
+                        <div><a href="./backend.html">首页</a></div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="image2"></div>
+                    <a href="#"><span>统计</span></a>
+                    <!-- 二级菜单 -->
+                    <div class="two">
+                        <div>统计</div>
+                        <div>统计</div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="image3"></div>
+                    <span>订单管理</span>
+                    <!-- 二级菜单 -->
+                    <div class="two">
+                        <div>订单管理</div>
+                        <div>订单管理</div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="image4"></div>
+                    <span><a href="./backControul.html">产品管理</a></span>
+                    <!-- 二级菜单 -->
+                    <div class="two">
+                        <div><a href="./backAdd.html">添加产品</a></div>
+                        <div><a href="./backShopItems.html">产品列表</a></div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="image5"></div>
+                    <span>物流管理</span>
+                    <!-- 二级菜单 -->
+                    <div class="two">
+                        <div>物流管理</div>
+                        <div>物流管理</div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="image6"></div>
+                    <span>售后管理</span>
+                    <!-- 二级菜单 -->
+                    <div class="two">
+                        <div>售后管理</div>
+                        <div>售后管理</div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="image7"></div>
+                    <span>资金流水</span>
+                    <!-- 二级菜单 -->
+                    <div class="two">
+                        <div>资金流水</div>
+                        <div>资金流水</div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class=" image8"></div>
+                    <span>会员管理</span>
+                    <!-- 二级菜单 -->
+                    <div class="two">
+                        <div>会员管理</div>
+                        <div>会员管理</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- 主体 -->
+        <div class="CtMain ">
+            <div class="ctWz">产品管理</div>
+            <div class="box box1">
+                <table>
+                    <tr>
+                        <td>商品ID：<input type="text"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>商品名称：<input type="text"></td>
+                        <td colspan="2" class="dd">
+                            交易时间：<input placeholder="开始时间" type="tt "> ——
+                            <input placeholder="结束时间" type="text">
+                        </td>
+                        <!-- <td></td> -->
+                    </tr>
+                    <tr>
+                        <td>买家昵称：<input type="text"></td>
+                        <td>交易类型：<select type="select" name="aa">
+                                <option name="aa">所有类型</option>
+                        </td>
+                        <td>订单状态：<select type="select">
+                                <option value="">全部</option>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>订单编号：<input type="text">
+                        </td>
+                        <td>物流服务：<select type="select">
+                                <option value="">全部</option>
+                        </td>
+                        <td>评价状态：<select type="select">
+                                <option value="">全部</option>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>预售状态：<select type="">
+                                <option value="">全部</option>
+                        </td>
+                        <td>订单类型：<select type="">
+                                <option value="">全部</option>
+                        </td>
+                        <td>售后服务：<select type="">
+                                <option value="">全部</option>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div class="ctmbtn2">
+                                <button>搜索订单</button>
+                                <button>批量导出</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="box box2">
+                <div class="b2Top">
+                    <ul>
+                        <li><a href="#">近一个月订单</a></li>
+                        <li><a href="#">等待买家付款</a></li>
+                        <li><a href="#">等待发货</a></li>
+                        <li><a href="#">已发货</a></li>
+                        <li><a href="#">退款中</a></li>
+                        <li><a href="#">需要评价</a></li>
+                        <li><a href="#">成功的订单</a></li>
+                        <li><a href="#">关闭的订单</a></li>
+                    </ul>
+                </div>
+                <div class="b2Mid">
+                    <ul>
+                        <li>商品</li>
+                        <li>单间</li>
+                        <li>数量</li>
+                        <li>销售单位</li>
+                        <li>交易状态</li>
+                        <li>实收款</li>
+                        <li>评价</li>
+                    </ul>
+                    <div class="img"><img src="../../img/kkry.png" alt=""></div>
+                </div>
+                <div class="b2Bto">
+                    <input type="checkbox"> 全选
+                    <button>批量发货</button>
+                    <button>批量标记</button>
+                    <button>批量免运费</button>
+                    <input type="checkbox"> 不显示已关闭订单
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<!-- echarts -->
+<script src="../js/backend.js"></script>
+
+</html>
